@@ -1,0 +1,21 @@
+puts "Enter the length of the sequence:"
+
+length = gets.chomp.to_i
+
+fib = [0]
+
+curr = 1
+
+last = 0
+
+while fib.length <= length
+  fib.push(curr)
+  old_curr = curr
+  curr = curr + last
+  last = curr_old
+end
+
+fib.each do |n|
+  puts n
+  puts "------"
+end
